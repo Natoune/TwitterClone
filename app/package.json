@@ -33,6 +33,7 @@
     "@types/axios": "^0.14.0",
     "@types/dotenv": "^8.2.0",
     "axios": "^1.4.0",
+    "daisyui": "^2.51.6",
     "dotenv": "^16.0.3",
     "svelte-routing": "^1.6.0"
   }
