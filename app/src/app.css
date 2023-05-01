@@ -1,0 +1,27 @@
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    --color-primary: #1a202c;
+    --color-secondary: #2d3748;
+    --color-tertiary: #4a5568;
+    --bg-primary: #f7fafc;
+    --bg-secondary: #edf2f7;
+    --bg-tertiary: #e2e8f0;
+    --color-text: #2d3748;
+    --color-text-secondary: #4a5568;
+    --color-text-tertiary: #718096;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "rs",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": {
+    "email": "contact@natoune.fr",
+    "name": "Natoune",
+    "url": "https://natoune.fr"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "@tsconfig/svelte": "^4.0.1",
+    "@types/sass": "^1.45.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "sass": "^1.62.1",
+    "svelte": "^3.57.0",
+    "svelte-check": "^2.10.3",
+    "tailwindcss": "^3.3.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/dotenv": "^8.2.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "svelte-routing": "^1.6.0"
+  }
+}
