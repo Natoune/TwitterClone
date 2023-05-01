@@ -26,11 +26,11 @@ Le backend est une API REST qui permet de gérer les utilisateurs, les tweets, l
 
 # Fonctionnalités
 **Cette liste est non exhaustive et sera mise à jour au fur et à mesure du développement.**
-- [-] Comptes
-    - **[x] Inscription**
-    - **[x] Connexion**
-    - **[x] Déconnexion**
-    - **[x] Réinitialisation du mot de passe**
+- [ ] Comptes
+    - [x] **Inscription**
+    - [x] **Connexion**
+    - [x] **Déconnexion**
+    - [x] **Réinitialisation du mot de passe**
     - [ ] Modification du profile
     - [ ] Suppression du compte
 - [ ] Tweets
