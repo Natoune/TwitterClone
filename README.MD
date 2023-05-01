@@ -71,12 +71,12 @@ Le backend est une API REST qui permet de gérer les utilisateurs, les tweets, l
 ## Mise en place
 ### Cloner le dépôt
 ```bash
-git clone https://github.com/Natoune/twitter-clone.git
+git clone https://github.com/Natoune/TwitterClone.git
 ```
 
 ### Installer les dépendances
 ```bash
-cd twitter-clone
+cd TwitterClone
 cd app
 npm install
 cd ../server
