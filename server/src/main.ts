@@ -84,7 +84,13 @@ app.get('/usercontent/avatar/:filename', (req, res) => {
 });
 
 app.all('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+    if (fs.existsSync(path.join(__dirname, '..', 'public', 'index.html'))) {
+        res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+    } else {
+        res.status(404).json({
+            message: 'Not Found'
+        });
+    }
 });
 
 app.listen(PORT, () => {
