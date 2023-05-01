@@ -15,7 +15,7 @@ export const RECAPTCHA_V2_KEY = process.env.RECAPTCHA_V2_KEY || '';
 
 // Resources
 export const RESOURCES = {
-    ICON: process.env.RESOURCES_ICON || '/icon.png',
+    ICON: process.env.RESOURCES_ICON || '/icon.svg',
     LOGIN_BACKGROUNDS: [
         '/images/backgrounds/login_bg_1.jpg',
         '/images/backgrounds/login_bg_2.jpg',
