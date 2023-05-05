@@ -1,21 +1,19 @@
-import 'dotenv/config';
-
 // Global
-export const APP_NAME = process.env.APP_NAME || 'AppName';
-export const APP_DESCRIPTION = process.env.APP_DESCRIPTION || 'AppDescription';
-export const MIN_AGE = parseInt(process.env.MIN_AGE) || 13;
+export const APP_NAME = 'Twitter Clone';
+export const APP_DESCRIPTION = 'Un clone de twitter en Node.js (en cours de développement).';
+export const MIN_AGE = 13;
 
 // Backend
-export const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:3000/api';
-export const USERCONTENT_BASE_URL = process.env.USERCONTENT_BASE_URL || 'http://localhost:3000/usercontent';
+export const API_BASE_URL = 'http://localhost:3000/api';
+export const USERCONTENT_BASE_URL = 'http://localhost:3000/usercontent';
 
-// Secrets
-export const RECAPTCHA_V3_KEY = process.env.RECAPTCHA_V3_KEY || '';
-export const RECAPTCHA_V2_KEY = process.env.RECAPTCHA_V2_KEY || '';
+// Keys
+export const RECAPTCHA_V3_KEY = '6Lf5acYlAAAAAID-IDvf8NGdCkLMQLjvw_VpNtqZ';
+export const RECAPTCHA_V2_KEY = '6Lf9hMYlAAAAAGoVo-4CiEFgu8ArQNRlzYfZ7fez';
 
 // Resources
 export const RESOURCES = {
-    ICON: process.env.RESOURCES_ICON || '/icon.svg',
+    ICON: '/icon.svg',
     LOGIN_BACKGROUNDS: [
         '/images/backgrounds/login_bg_1.jpg',
         '/images/backgrounds/login_bg_2.jpg',
@@ -23,7 +21,7 @@ export const RESOURCES = {
     ]
 };
 
-export const IS_APP = (process.env.IS_APP == 'true' ? true : false) || false;
+export const IS_APP = false;
 
 // Functions
 export const IS_MOBILE = () => {
