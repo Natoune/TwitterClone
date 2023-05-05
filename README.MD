@@ -85,23 +85,32 @@ npm install
 
 ## Environnement
 ### Frontend
-Créer un fichier `.env` dans le dossier `app` et y ajouter les variables suivantes:
-```properties
-# Global
-APP_NAME=Twitter Clone
-APP_DESCRIPTION=Un clone de Twitter
-MIN_AGE=13 # Age minimum pour s'inscrire
+Éditer le fichier `app/src/utils/constants.ts` et modifier les variables suivantes:
+```typescript
+// Global
+export const APP_NAME = 'Twitter Clone'; // Nom de l'application
+export const APP_DESCRIPTION = 'Un clone de twitter en Node.js (en cours de développement).'; // Description de l'application
+export const MIN_AGE = 13; // Age minimum pour s'inscrire
 
-# Backend
-API_BASE_URL=http://localhost:3000 # URL de l'API
-USERCONTENT_BASE_URL=http://localhost:3000/usercontent # URL du serveur de contenu utilisateur (images, vidéos, etc.)
+// Backend
+export const API_BASE_URL = 'http://localhost:3000/api'; // URL de l'API
+export const USERCONTENT_BASE_URL = 'http://localhost:3000/usercontent'; // URL du serveur de contenu utilisateur (images, vidéos, etc.)
 
-# Secrets
-RECAPTCHA_V3_KEY=XXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX # Clé de l'API reCAPTCHA v3
-RECAPTCHA_V2_KEY=XXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXX # Clé de l'API reCAPTCHA v2
+// Keys
+export const RECAPTCHA_V3_KEY = '6Lf5acYlAAAAAID-IDvf8NGdCkLMQLjvw_VpNtqZ'; // Clé publique de l'API reCAPTCHA v3
+export const RECAPTCHA_V2_KEY = '6Lf9hMYlAAAAAGoVo-4CiEFgu8ArQNRlzYfZ7fez'; // Clé publique de l'API reCAPTCHA v2
 
-# Mobile app integration
-IS_APP=false
+// Resources
+export const RESOURCES = {
+    ICON: '/icon.svg', // Icône de l'application
+    LOGIN_BACKGROUNDS: [
+        '/images/backgrounds/login_bg_1.jpg', // Images de fond de la page de connexion
+        '/images/backgrounds/login_bg_2.jpg',
+        '/images/backgrounds/login_bg_3.jpg',
+    ]
+};
+
+export const IS_APP = false; // Intégration de l'application mobile
 ```
 
 ### Backend
